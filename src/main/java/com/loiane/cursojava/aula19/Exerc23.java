@@ -1,6 +1,5 @@
 package com.loiane.cursojava.aula19;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Exerc23 {
