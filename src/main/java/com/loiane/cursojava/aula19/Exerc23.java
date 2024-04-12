@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Exerc23 {
     public static void main(String[] args) {
-        Random random = new Random();
         Scanner scan = new Scanner(System.in);
         int[] a = new int[10];
 
