@@ -1,11 +1,17 @@
 package com.loiane.cursojava.aula19;
 
+import java.util.Scanner;
+
 public class Exerc20 {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         double[] a = new double[20];
-        double dolar = 1;
-        double real = 1;
-        double cotacaoDolar = dolar*(real*5.06);
+
+        double cotacaoDolar;
+
+        System.out.println("Digite o valor do dolar: ");
+        cotacaoDolar = input.nextDouble();
+
 
         for(int i = 0; i < a.length; i++){
             a[i] = cotacaoDolar * (i+1);
