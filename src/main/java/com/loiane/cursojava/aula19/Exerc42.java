@@ -12,7 +12,7 @@ public class Exerc42 {
         for (int i = 0; i < a.length; i++) {
             a[i] = rand.nextInt(10);
             System.out.print(" " + a[i]);
-            //Vetor desordenado
+            //Vetor desordenado.
         }
         // Arrays.sort(a); Entrada pra aprendizagem de algoritmo quicksort.
 
@@ -32,6 +32,7 @@ public class Exerc42 {
             n--;
         } while (trocou);
 
+        System.out.print("\t|\t");
         System.out.print(" Vetor A Ordenado:");
         for(int i = 0;i<a.length;i++){
             System.out.print(" " + a[i]);
