@@ -6,7 +6,7 @@ public class Exerc04 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String[][] compromissos = new String[31][24];
+        String[][][] compromissos = new String[12][31][8];
 
         byte escolha;
         boolean sair = false;
@@ -21,6 +21,18 @@ public class Exerc04 {
             escolha = scan.nextByte();
 
             if (escolha == 1) {
+                int mes = 0;
+                boolean mesValido = false;
+                while (!mesValido) {
+                    System.out.println("Entre com o mês: ");
+                    mes = scan.nextInt();
+                    if (mes > 0 && mes <= 12) {
+                        mesValido = true;
+                    } else {
+                        System.out.println("Mês inválido, digite novamente!");
+                    }
+                }
+
                 int dia = 0;
                 boolean diaValido = false;
                 while (!diaValido) {
@@ -37,17 +49,30 @@ public class Exerc04 {
                 while (!horaValido) {
                     System.out.println("Entre com a hora do mês: ");
                     hora = scan.nextInt();
-                    if (hora >= 0 && hora <= 24) {
+                    if (hora >= 0 && hora <= 8) {
                         horaValido = true;
                     } else {
                         System.out.println("Hora inválido, digite novamente!");
                     }
                 }
+                mes--;
                 dia--; //O dia vai até 31, mas o vetor conta a partir do 0. Logo vai ser sempre um dia a menos pra o vetor;
                 System.out.println("Digite o compromisso: ");
-                compromissos[dia][hora] = scan.next();
+                compromissos[mes][dia][hora] = scan.next();
 
             } else if (escolha == 2) {
+                int mes = 0;
+                boolean mesValido = false;
+                while (!mesValido) {
+                    System.out.println("Entre com o mês: ");
+                    mes = scan.nextInt();
+                    if (mes > 0 && mes <= 12) {
+                        mesValido = true;
+                    } else {
+                        System.out.println("Mês inválido, digite novamente!");
+                    }
+                }
+
                 int dia = 0;
                 boolean diaValido = false;
                 while (!diaValido) {
@@ -64,15 +89,16 @@ public class Exerc04 {
                 while (!horaValido) {
                     System.out.println("Entre com a hora do mês: ");
                     hora = scan.nextInt();
-                    if (hora >= 0 && hora <= 24) {
+                    if (hora >= 0 && hora <= 8) {
                         horaValido = true;
                     } else {
                         System.out.println("Hora inválido, digite novamente!");
                     }
                 }
+                mes--;
                 dia--;
                 System.out.println("O comprimisso agendado é: ");
-                System.out.println("\t" + compromissos[dia][hora]);
+                System.out.println("\t" + compromissos[mes][dia][hora]);
 
             } else if(escolha == 0){
                 sair = true;
