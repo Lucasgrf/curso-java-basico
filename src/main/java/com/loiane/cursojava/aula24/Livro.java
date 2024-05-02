@@ -6,5 +6,10 @@ public class Livro {
     String modelo;
     boolean imagens;
 
+    String idioma;
+    String editora;
+    String autor;
+    String nome;
+
 
 }
