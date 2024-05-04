@@ -1,4 +1,4 @@
-package com.loiane.cursojava.aula24;
+package com.loiane.cursojava.aula24ate27;
 
 public class ContaCorrente {
     String status, nomePessoa;

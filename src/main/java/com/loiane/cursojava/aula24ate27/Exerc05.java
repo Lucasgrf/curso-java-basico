@@ -1,4 +1,4 @@
-package com.loiane.cursojava.aula24;
+package com.loiane.cursojava.aula24ate27;
 
 public class Exerc05 {
     public static void main(String[] args) {
