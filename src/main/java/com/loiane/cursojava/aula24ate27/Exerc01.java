@@ -3,7 +3,7 @@ package com.loiane.cursojava.aula24ate27;
 public class Exerc01 {
     public static void main(String[] args) {
         Lampada lampada = new Lampada();
-        lampada.marca = "Avant";
+        /* lampada.marca = "Avant";
         lampada.tensao = "Bivolt";
         lampada.modelo = "Led";
         lampada.tipoLuz = "branca";
@@ -20,6 +20,15 @@ public class Exerc01 {
         System.out.println("Cor: " + lampada.cor);
         System.out.println("Garantia: " + lampada.garantiaMeses);
         System.out.println("Preço: R$ " + lampada.preco);
+         */
+
+        lampada.ligar();
+        lampada.mudarEstado();
+        lampada.mostrarEstado();
+
+        lampada.desligar();
+        lampada.mudarEstado();
+        lampada.mostrarEstado();
 
     }
 }
