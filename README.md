@@ -8,7 +8,7 @@ Curso oferecido pela Loiane Groner, passando por assuntos como:
 
 - Lógica de programação
 
-- POO - Atributos, classes e objetos,interface, métodos, encapsulamento, herança, abstração e polimorfismo.
+- POO - Atributos, classes e objetos,interface, métodos, encapsulamento,sobrecarga, herança, abstração e polimorfismo.
 
 - Exceptions - try, catch, multiples catch, finally, stacktrace e throws.
 
