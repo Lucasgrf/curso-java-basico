@@ -7,6 +7,7 @@ public class Exerc02 {
         imprimirTela(Calculadora.multiplicar(2,-3));
         imprimirTela(Calculadora.subtrair(2,3));
         imprimirTela(Calculadora.elevarPotencia(2,3));
+        imprimirTela(Calculadora.fatorial(5));
 
     }
 
