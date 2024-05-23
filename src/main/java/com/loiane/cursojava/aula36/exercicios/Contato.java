@@ -26,4 +26,8 @@ public class Contato {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String obterInfo(){
+        return "Nome: " + this.getNome() + "; " + " Telefone: " + this.getTelefone() + "; " + " E-mail: " + this.getEmail();
+    }
 }

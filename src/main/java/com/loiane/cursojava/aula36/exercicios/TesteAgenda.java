@@ -33,12 +33,8 @@ public class TesteAgenda {
 
         agenda.setContatos(contatos);
 
-        //Imprimir informações
-        System.out.println("Nome da agenda: " + agenda.getNome());
-        if(agenda != null && agenda.getContatos() != null){
-            for(Contato a : agenda.getContatos()){
-                System.out.println("Nome: " + a.getNome() + " Telefone: " + a.getTelefone() + " E-mail: " + a.getEmail());
-            }
+        if(agenda != null){
+            System.out.println(agenda.obterInfo());
         }
     }
 }
