@@ -38,7 +38,7 @@ public class Teste {
         piramide.setNome("Piramide");
         piramide.setCor("Amarelo queimado");
 
-        FiguraGeometrica[] figuras = new FiguraGeometrica[6];
+        FiguraGeometrica[] figuras = new FiguraGeometrica[6]; //upcasting
         figuras[0] = quadrado;
         figuras[1] = circulo;
         figuras[2] = triangulo;
@@ -50,11 +50,11 @@ public class Teste {
             System.out.println("------------------------");
             System.out.println(figura.getNome());
             if(figura instanceof Figura2D){
-                Figura2D figura2D = (Figura2D) figura;
+                Figura2D figura2D = (Figura2D) figura;//downcasting
                 System.out.println("Área: "+figura2D.calcularArea());
             }
             if(figura instanceof Figura3D){
-                Figura3D figura3D = (Figura3D) figura;
+                Figura3D figura3D = (Figura3D) figura; //downcasting
                 System.out.println("Área: "+figura3D.calcularArea());
                 System.out.println("Volume: "+figura3D.calcularVolume());
             }
